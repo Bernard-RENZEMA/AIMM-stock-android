@@ -1,1 +1,1 @@
-# aimm-stock-android
+# AIMM-stock-android
