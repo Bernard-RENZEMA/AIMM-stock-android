@@ -1,0 +1,63 @@
+<resources>
+
+    <string name="app_name">AIMM</string>
+
+    <string-array name="main_tab_items">
+        <item>Chantiers</item>
+    </string-array>
+
+    <string-array name="work_tab_items">
+        <item>Résumé</item>
+    </string-array>
+
+    <string-array name="creator_items">
+        <item>Ajouter un chantier</item>
+        <item>Entrée de stock</item>
+        <item>Sortie de stock</item>
+        <item>Retour de stock</item>
+        <item>Ajouter un client</item>
+    </string-array>
+    <string name="description">Description</string>
+    <string name="quantity">Quantité</string>
+    <string name="status">Statut</string>
+    <string name="address">Addresse</string>
+    <string name="postalCode">Code postal</string>
+    <string name="city">Ville</string>
+    <string name="country">Pays</string>
+
+    /**
+    * LOGIN
+    **/
+    <string name="password">Mot de passe</string>
+    <string name="connect">Connexion</string>
+
+    /**
+    * MENUS
+    **/
+    <string name="add">Ajouter</string>
+    <string name="search">Recherche</string>
+
+    /**
+    * FAB
+    **/
+    <string name="name">Nom</string>
+    <string name="work">Chantier</string>
+    <string name="date">Date</string>
+    <string name="stockEntry">Entrée</string>
+    <string name="stockExit">Sortie</string>
+    <string name="stockComeback">Retour</string>
+    <string name="stockDirect">Livraison direct</string>
+
+    /**
+    * ERRORS
+    **/
+    <string name="noConnectionError">Vous n\'êtes pas connecté à internet.</string>
+    <string name="serverUnreachableError">Aucune réponse du serveur.</string>
+    <string name="workmaterialNeverUsedError">Ce materiaux n\'as jamais été utilisé.</string>
+    <string name="quantityNegativeError">La quantité ne peut pas être négative.</string>
+    <string name="unknownMaterialError">Materiaux inconnu.</string>
+    <string name="unknownClientError">Client inconnu.</string>
+    <string name="success">Succès!</string>
+    <string name="error">Erreur!</string>
+
+</resources>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ndroid="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparentBlack"/>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/anchor"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabOpt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginExtraLarge"
+            android:layout_marginRight="@dimen/marginExtraLarge"
+            android:layout_marginBottom="@dimen/marginBottomFab3"
+            android:layout_marginTop="@dimen/marginSmall"
+            app:layout_anchor="@+id/fabCancel"
+            app:layout_anchorGravity="top|end"
+            app:elevation="@dimen/fabElevation"
+            app:borderWidth="0dp"
+            app:backgroundTint="@color/tealAccent4"/>
+
+        <TextView
+            android:id="@+id/fabOpt3Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/titleMarginRight"
+            android:elevation="@dimen/fabElevation"
+            android:textSize="@dimen/textSizeSmall"
+            android:textColor="@android:color/white"
+            app:layout_anchor="@id/fabOpt3"
+            app:layout_anchorGravity="center_vertical"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabOpt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginExtraLarge"
+            android:layout_marginRight="@dimen/marginExtraLarge"
+            android:layout_marginBottom="@dimen/marginBottomFab2"
+            android:layout_marginTop="@dimen/marginSmall"
+            app:layout_anchor="@id/fabCancel"
+            app:layout_anchorGravity="top|end"
+            app:elevation="@dimen/fabElevation"
+            app:borderWidth="0dp"
+            app:backgroundTint="@color/tealAccent4"/>
+
+        <TextView
+            android:id="@+id/fabOpt2Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/titleMarginRight"
+            android:elevation="@dimen/fabElevation"
+            android:textSize="@dimen/textSizeSmall"
+            android:textColor="@android:color/white"
+            app:layout_anchor="@id/fabOpt2"
+            app:layout_anchorGravity="center_vertical"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabOpt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginExtraLarge"
+            android:layout_marginRight="@dimen/marginExtraLarge"
+            android:layout_marginBottom="@dimen/marginBottomFab1"
+            android:layout_marginTop="@dimen/marginSmall"
+            app:layout_anchor="@id/fabCancel"
+            app:layout_anchorGravity="top|end"
+            app:elevation="@dimen/fabElevation"
+            app:borderWidth="0dp"
+            app:backgroundTint="@color/tealAccent4"/>
+
+        <TextView
+            android:id="@+id/fabOpt1Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/titleMarginRight"
+            android:elevation="@dimen/fabElevation"
+            android:textSize="@dimen/textSizeSmall"
+            android:textColor="@android:color/white"
+            app:layout_anchor="@id/fabOpt1"
+            app:layout_anchorGravity="center_vertical"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/marginExtraLarge"
+            app:layout_anchor="@id/anchor"
+            app:layout_anchorGravity="bottom|right|end"
+            app:elevation="@dimen/fabElevation"
+            app:borderWidth="0dp"
+            app:backgroundTint="@color/tealAccent4"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/marginExtraLarge"
+            android:src="@drawable/ic_clear_white_24dp"
+            app:layout_anchor="@id/anchor"
+            app:layout_anchorGravity="bottom|right|end"
+            app:elevation="@dimen/fabElevation"
+            app:borderWidth="0dp"
+            app:backgroundTint="@color/red"/>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</RelativeLayout>

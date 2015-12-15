@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<color name="redDarkTone1">#E53935</color>
+	<color name="redDarkTone2">#D32F2F</color>
+	<color name="redDarkTone3">#C62828</color>
+	<color name="redDarkTone4">#B71C1C</color>
+	<color name="red">#F44336</color>
+	<color name="redLightTone1">#EF5350</color>
+	<color name="redLightTone2">#E57373</color>
+	<color name="redLightTone3">#EF9A9A</color>
+	<color name="redLightTone4">#FFCDD2</color>
+
+	<color name="pinkDarkTone1">#D81B60</color>
+	<color name="pinkDarkTone2">#C2185B</color>
+	<color name="pinkDarkTone3">#AD1457</color>
+	<color name="pinkDarkTone4">#880E4F</color>
+	<color name="pink">#E91E63</color>
+	<color name="pinkLightTone1">#EC407A</color>
+	<color name="pinkLightTone2">#F06292</color>
+	<color name="pinkLightTone3">#F48FB1</color>
+	<color name="pinkLightTone4">#F8BBD0</color>
+
+	<color name="deepPurpleDarkTone1">#5E35B1</color>
+	<color name="deepPurpleDarkTone2">#512DA8</color>
+	<color name="deepPurpleDarkTone3">#4527A0</color>
+	<color name="deepPurpleDarkTone4">#311B92</color>
+	<color name="deepPurple">#673AB7</color>
+	<color name="deepPurpleLightTone1">#7E57C2</color>
+	<color name="deepPurpleLightTone2">#9575CD</color>
+	<color name="deepPurpleLightTone3">#B39DDB</color>
+	<color name="deepPurpleLightTone4">#D1C4E9</color>
+
+	<color name="indigoDarkTone1">#3949AB</color>
+	<color name="indigoDarkTone2">#303F9F</color>
+	<color name="indigoDarkTone3">#283593</color>
+	<color name="indigoDarkTone4">#1A237E</color>
+	<color name="indigo">#3F51B5</color>
+	<color name="indigoLightTone1">#5C6BC0</color>
+	<color name="indigoLightTone2">#7986CB</color>
+	<color name="indigoLightTone3">#9FA8DA</color>
+	<color name="indigoLightTone4">#C5CAE9</color>
+
+
+	<color name="tealAccent1">#A7FFEB</color>
+	<color name="tealAccent2">#64FFDA</color>
+	<color name="tealAccent3">#1DE9B6</color>
+	<color name="tealAccent4">#00BFA5</color>
+
+	<color name="greenAccent1">#B9F6CA</color>
+	<color name="greenAccent2">#69F0AE</color>
+	<color name="greenAccent3">#00E676</color>
+	<color name="greenAccent4">#00C853</color>
+
+	<color name="deepOrangeDarkTone1">#F4511E</color>
+	<color name="deepOrangeDarkTone2">#E64A19</color>
+	<color name="deepOrangeDarkTone3">#D84315</color>
+	<color name="deepOrangeDarkTone4">#BF360C</color>
+	<color name="deepOrange">#FF5722</color>
+	<color name="deepOrangeLightTone1">#FF7043</color>
+	<color name="deepOrangeLightTone2">#FF8A65</color>
+	<color name="deepOrangeLightTone3">#FFAB91</color>
+	<color name="deepOrangeLightTone4">#FFCCBC</color>
+
+	<color name="black">#000000</color>
+	<color name="transparentBlack">#90000000</color>
+	<color name="white">#ffffff</color>
+	<color name="transparentWhite">#90ffffff</color>
+
+	 <color name="redGPlus">#d95232</color>
+	 <color name="blueFacebook">#3b5997</color>
+
+</resources>
