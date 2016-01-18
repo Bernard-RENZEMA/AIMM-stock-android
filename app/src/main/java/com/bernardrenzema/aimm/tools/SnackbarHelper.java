@@ -11,7 +11,7 @@ public class SnackbarHelper {
 
 	public SnackbarHelper make(View view, String text) {
 		if (view != null) {
-			mSnackbar = Snackbar.make(view, text, 5000);
+			mSnackbar = Snackbar.make(view, text, Snackbar.LENGTH_INDEFINITE);
 		}
 		return this;
 	}

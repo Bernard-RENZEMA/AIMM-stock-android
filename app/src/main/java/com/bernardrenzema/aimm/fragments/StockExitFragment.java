@@ -57,7 +57,6 @@ public class StockExitFragment extends Fragment implements View.OnClickListener 
 
     private Client                  mClient;
     private Work                    mWork;
-    private String                  mBarcode;
 
     private boolean                 mProcessingClick = false;
 
@@ -86,7 +85,6 @@ public class StockExitFragment extends Fragment implements View.OnClickListener 
 
         mClient = getArguments().getParcelable("client");
         mWork = getArguments().getParcelable("work");
-        mBarcode = getArguments().getString("barcode");
 
         mAutoDescription = (Spinner) inflateView.findViewById(R.id.autoDescription);
         mVoiceSearch = (ImageButton) inflateView.findViewById(R.id.voiceSearch);
@@ -157,7 +155,7 @@ public class StockExitFragment extends Fragment implements View.OnClickListener 
                                 Intent i = new Intent();
 
                                 i.putExtra("type", CreatorActivity.STOCK_EXIT);
-                                i.putExtra("barcode", mBarcode);
+                                i.putExtra("barcode",((Stockmaterial) mAutoDescription.getSelectedItem()).getBarcode());
                                 i.putExtra("description", ((Stockmaterial) result).getDescription());
                                 i.putExtra("unit", ((Stockmaterial) result).getUnit());
                                 i.putExtra("quantity", quantity);
@@ -211,7 +209,6 @@ public class StockExitFragment extends Fragment implements View.OnClickListener 
                     for (String thing : thingsYouSaid) {
                         query += (query.length() <= 0 ? "" : "+") + thing.replace(" ", ",");
                     }
-                    Log.e(TAG, query);
                     Stockmaterial.getByKeywords(mActivity, query, new Callback() {
                         @Override
                         public void onSuccess(Object result) {

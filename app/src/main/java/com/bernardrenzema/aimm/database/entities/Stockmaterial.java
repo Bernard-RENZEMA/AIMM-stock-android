@@ -22,7 +22,7 @@ import java.util.ArrayList;
 
 public class Stockmaterial implements Parcelable {
 
-    private static String               TAG = "Stocmaterialk";
+    private static String               TAG = "Stocmaterial";
 
     private int 		                mId;
     private int 		                mFamily;
@@ -239,6 +239,7 @@ public class Stockmaterial implements Parcelable {
 
                 @Override
                 public void onFailure(int statusCode, Header[] headers, Throwable throwable, JSONObject errorResponse) {
+                    Log.e(TAG, statusCode + " " + errorResponse);
                     callback.onFailure(statusCode, errorResponse);
                 }
             });

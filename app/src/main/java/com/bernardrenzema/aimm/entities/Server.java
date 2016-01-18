@@ -2,9 +2,10 @@ package com.bernardrenzema.aimm.entities;
 
 public class Server {
 
-	//	public static final String		ADRESS = "http://aimm.bernardrenzema.com";
-	public static final String		ADRESS = "http://aimm.herokuapp.com";
-	public static final int			PORT = 80;
+		public static final String		ADRESS = "http://192.168.1.100";
+	//public static final String		ADRESS = "http://aimm.herokuapp.com";
+//	public static final int			PORT = 80;
+	public static final int			PORT = 5000;
 
 	public static final String		R_ROOT = ADRESS + ":" + PORT;
 	public static final String		R_LOGIN = R_ROOT + "/login";
@@ -18,7 +19,7 @@ public class Server {
 	public static final String		R_RUNNING_WORKS = R_ROOT + "/works/running";
 
 	/* CLIENT */
-	public static final String		R_CLIENTS = R_ROOT + "/clients";
+	public static final String		R_CLIENTS = R_ROOT + "/users/clients";
 	public static String			R_CLIENT_BY_ID(int id) {
 		return R_CLIENTS + "/" + id;
 	}

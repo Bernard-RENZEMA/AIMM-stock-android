@@ -197,19 +197,8 @@ public class Client implements Parcelable {
     public static void getClientById(Activity context, int id, final Callback callback) {
         RestClient.get(context, Server.R_CLIENT_BY_ID(id), null, new JsonHttpResponseHandler() {
             @Override
-            public void onSuccess(int statusCode, Header[] headers, JSONArray response) {
-                ArrayList<Client> result = new ArrayList<Client>();
-
-                for (int i = 0; i < response.length(); ++i) {
-                    try {
-                        Client client = new Client(response.getJSONObject(i));
-
-                        result.add(client);
-                    } catch (JSONException e) {
-                        Log.e(TAG, "JSONException: error = " + e);
-                    }
-                }
-                callback.onSuccess(result.get(0));
+            public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
+                callback.onSuccess(new Client(response));
             }
 
             @Override

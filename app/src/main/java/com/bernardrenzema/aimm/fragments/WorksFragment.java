@@ -100,7 +100,7 @@ public class WorksFragment extends Fragment implements View.OnClickListener, Wit
                 String barcode = intent != null ? intent.getStringExtra("barcode") : null;
                 String description = intent != null ? intent.getStringExtra("description") : null;
                 String unit = intent != null ? intent.getStringExtra("unit") : null;
-                int quantity = intent != null ? intent.getIntExtra("quantity", 0) : 0;
+                float quantity = intent != null ? intent.getFloatExtra("quantity", 0) : 0;
                 final int type = intent != null ? intent.getIntExtra("type", -1) : -1;
                 final SnackbarHelper snackbarHelper = new SnackbarHelper();
 
@@ -118,7 +118,7 @@ public class WorksFragment extends Fragment implements View.OnClickListener, Wit
                                 try {
                                     JSONObject data = new JSONObject().
                                             put("barcode", intent.getStringExtra("barcode")).
-                                            put("quantity", intent.getIntExtra("quantity", 0));
+                                            put("quantity", intent.getFloatExtra("quantity", 0));
 
                                     switch (type) {
                                         case CreatorActivity.STOCK_ENTRY:

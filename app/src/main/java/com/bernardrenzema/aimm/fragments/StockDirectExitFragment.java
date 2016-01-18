@@ -29,7 +29,7 @@ import org.json.JSONObject;
 
 public class StockDirectExitFragment extends Fragment implements View.OnClickListener {
 
-    private static final String     TAG = "StockExitFragment";
+    private static final String     TAG = "StockDirectExitFragment";
 
     private Activity                mActivity;
 
@@ -133,10 +133,10 @@ public class StockDirectExitFragment extends Fragment implements View.OnClickLis
                                 put("description", description).
                                 put("type", "directdelivery").
                                 put("isExtra", false).
-                                put("quantity", quantity).
+                                put("used", quantity).
+                                put("family", 3).
                                 put("unit", "unite");
 
-                                Log.e(TAG, "d = " + data);
                                 Workmaterial.add(mActivity, data, new Callback() {
                                     @Override
                                     public void onSuccess(Object result) {

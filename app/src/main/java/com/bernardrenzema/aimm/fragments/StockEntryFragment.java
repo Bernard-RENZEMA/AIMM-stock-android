@@ -53,7 +53,6 @@ public class StockEntryFragment extends Fragment implements View.OnClickListener
 
     private Client                  mClient;
     private Work                    mWork;
-    private String                  mBarcode;
 
     private boolean                 mProcessingClick = false;
 
@@ -82,7 +81,6 @@ public class StockEntryFragment extends Fragment implements View.OnClickListener
 
         mClient = getArguments().getParcelable("client");
         mWork = getArguments().getParcelable("work");
-        mBarcode = getArguments().getString("barcode");
 
         mAutoDescription = (Spinner) inflateView.findViewById(R.id.autoDescription);
         mVoiceSearch = (ImageButton) inflateView.findViewById(R.id.voiceSearch);
@@ -160,7 +158,7 @@ public class StockEntryFragment extends Fragment implements View.OnClickListener
                                 Intent i = new Intent();
 
                                 i.putExtra("type", CreatorActivity.STOCK_ENTRY);
-                                i.putExtra("barcode", mBarcode);
+                                i.putExtra("barcode", ((Stockmaterial) mAutoDescription.getSelectedItem()).getBarcode());
                                 i.putExtra("description", ((Stockmaterial) result).getDescription());
                                 i.putExtra("unit", ((Stockmaterial) result).getUnit());
                                 i.putExtra("quantity", quantity);

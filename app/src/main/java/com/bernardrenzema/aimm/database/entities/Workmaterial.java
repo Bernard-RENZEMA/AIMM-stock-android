@@ -25,7 +25,7 @@ public class Workmaterial implements Parcelable {
     private static String			    TAG = "Workmaterial";
 
     private int 		                mId;
-    private boolean                     mDirectDelivery;
+    private String                      mType;
     private int 		                mFamily;
     private String 		                mDescription;
     private String 		                mUnit;
@@ -60,7 +60,7 @@ public class Workmaterial implements Parcelable {
     public Workmaterial(Parcel in){
         TAG = in.readString();
         mId = in.readInt();
-        mDirectDelivery = in.readByte() != 0;
+        mType = in.readString();
         mFamily = in.readInt();
         mDescription = in.readString();
         mUnit = in.readString();
@@ -81,7 +81,7 @@ public class Workmaterial implements Parcelable {
     public void writeToParcel(Parcel out, int flags) {
         out.writeString(TAG);
         out.writeInt(mId);
-        out.writeByte((byte) (mDirectDelivery ? 1 : 0));
+        out.writeString(mType);
         out.writeInt(mFamily);
         out.writeString(mDescription);
         out.writeString(mUnit);
@@ -115,7 +115,7 @@ public class Workmaterial implements Parcelable {
             Log.e(TAG, "JSONException: error = " + e);
         }
         try {
-            mDirectDelivery = workmaterial.getBoolean("directDelivery");
+            mType = workmaterial.getString("type");
         } catch (JSONException e) {
             Log.e(TAG, "JSONException: error = " + e);
         }
