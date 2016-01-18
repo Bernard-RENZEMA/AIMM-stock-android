@@ -2,10 +2,8 @@ package com.bernardrenzema.aimm.entities;
 
 public class Server {
 
-		public static final String		ADRESS = "http://192.168.1.100";
-	//public static final String		ADRESS = "http://aimm.herokuapp.com";
-//	public static final int			PORT = 80;
-	public static final int			PORT = 5000;
+	public static final String		ADRESS = "http://aimm.herokuapp.com";
+	public static final int			PORT = 80;
 
 	public static final String		R_ROOT = ADRESS + ":" + PORT;
 	public static final String		R_LOGIN = R_ROOT + "/login";
